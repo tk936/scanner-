@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 
-<html lang="hi">
+<html>
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TK Home Tuition AI</title>
+<title>TK AI Reviewer</title>
 <script src=""></script>
 <style>
 body { font-family: sans-serif; text-align: center; background: #000; color: #fff; padding: 20px; }
 .card { background: #111; padding: 20px; border-radius: 20px; border: 1px solid #333; max-width: 350px; margin: auto; }
-#review-box { background: #222; padding: 15px; border-radius: 10px; margin: 20px 0; border: 1px dashed #4285f4; min-height: 60px; }
-button { background: #4285f4; color: #fff; border: none; padding: 15px; width: 100%; border-radius: 10px; font-weight: bold; cursor: pointer; margin-bottom: 10px; }
+#review-box { background: #222; padding: 15px; border-radius: 10px; margin: 20px 0; border: 1px dashed #4285f4; min-height: 60px; font-size: 16px; }
+button { background: #4285f4; color: #fff; border: none; padding: 15px; width: 100%; border-radius: 10px; font-weight: bold; font-size: 16px; cursor: pointer; margin-bottom: 10px; }
 #copy-btn { background: #34a853; display: none; }
 #qrcode { background: #fff; padding: 10px; display: inline-block; margin-top: 20px; border-radius: 10px; }
 </style>
@@ -18,20 +17,13 @@ button { background: #4285f4; color: #fff; border: none; padding: 15px; width: 1
 <body>
 <div class="card">
 <h2>TK Home Tuition</h2>
-<p>AI Review System</p>
-<div id="review-box">Button dabayein...</div>
-<button onclick="askAI()">✨ Generate New Review</button>
-<button id="copy-btn" onclick="copy()">Copy & Post on Google</button>
+<p>AI Review Generator</p>
+<div id="review-box">यहाँ रिव्यु आएगा...</div>
+<button onclick="getAIReview()">✨ Generate New Review</button>
+<button id="copy-btn" onclick="copyReview()">Copy & Post on Google</button>
 <div id="qrcode"></div>
-<p style="font-size:12px; color:#666;">Is QR ko scan karke review likhein</p>
+<p style="font-size:12px; color:#666;">इसे स्कैन करके रिव्यु लिखें</p>
 </div>
-
-<script>
-// Aapki di hui Details
-const KEY = "AIzaSyA2IbqKI2nS_cFVnjAvFxqKW_aE9B-9iXc";
-const LINK = "";
-
-</script>
 
 </body>
 </html>
